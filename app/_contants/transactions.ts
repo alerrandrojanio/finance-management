@@ -1,4 +1,5 @@
 import {
+  TransactionCard,
   TransactionCategory,
   TransactionPaymentMethod,
   TransactionType,
@@ -131,5 +132,28 @@ export const TRANSACTION_CATEGORY_OPTIONS = [
   {
     value: TransactionCategory.UTILITY,
     label: TRANSACTION_CATEGORY_LABELS[TransactionCategory.UTILITY],
+  },
+];
+
+export const TRANSACTION_PAYMENT_CARD_OPTIONS = [
+  {
+    value: TransactionCard.NUBANK,
+    label: TRANSACTION_PAYMENT_CARD_LABELS[TransactionCard.NUBANK],
+  },
+  {
+    value: TransactionCard.NUBANK_PJ,
+    label: TRANSACTION_PAYMENT_CARD_LABELS[TransactionCard.NUBANK_PJ],
+  },
+  {
+    value: TransactionCard.BANCO_DO_BRASIL,
+    label: TRANSACTION_PAYMENT_CARD_LABELS[TransactionCard.BANCO_DO_BRASIL],
+  },
+  {
+    value: TransactionCard.PICPAY,
+    label: TRANSACTION_PAYMENT_CARD_LABELS[TransactionCard.PICPAY],
+  },
+  {
+    value: TransactionCard.MERCADO_PAGO,
+    label: TRANSACTION_PAYMENT_CARD_LABELS[TransactionCard.MERCADO_PAGO],
   },
 ];

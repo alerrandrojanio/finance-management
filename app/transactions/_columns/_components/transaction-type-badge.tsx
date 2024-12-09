@@ -11,7 +11,7 @@ export function TransactionTypeBadge({
 }: TransactionTypeBadgeProps) {
   if (transaction.type === TransactionType.DEPOSIT) {
     return (
-      <Badge className="bg-muted font-bold text-primary hover:bg-muted">
+      <Badge className="bg-muted bg-opacity-10 font-bold text-primary hover:bg-muted">
         <CircleIcon className="mr-2 fill-primary" size={10} />
         Depósito
       </Badge>
@@ -26,7 +26,7 @@ export function TransactionTypeBadge({
     );
   }
   return (
-    <Badge className="bg-white bg-opacity-10 font-bold text-white hover:bg-muted">
+    <Badge className="bg-muted bg-opacity-10 font-bold text-white hover:bg-muted">
       <CircleIcon className="mr-2 fill-white" size={10} />
       Investimento
     </Badge>
