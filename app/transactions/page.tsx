@@ -14,6 +14,9 @@ export default async function Transactions() {
     where: {
       userId,
     },
+    orderBy: {
+      date: "desc",
+    },
   });
 
   return (
