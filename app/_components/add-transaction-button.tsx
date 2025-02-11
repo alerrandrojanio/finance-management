@@ -45,7 +45,7 @@ import {
 } from "../_contants/transactions";
 import { DatePicker } from "./ui/date-picker";
 import { DialogClose } from "@radix-ui/react-dialog";
-import { AddTransaction } from "../_actions/add-transaction";
+import { UpsertTransaction } from "../_actions/upsert-transaction";
 import { useState } from "react";
 
 const transactionSchema = z.object({
@@ -96,7 +96,7 @@ export function AddTransactionButton() {
       )
         data.paymentCard = null;
 
-      await AddTransaction(data);
+      await UpsertTransaction(data);
       setDialogIsOpen(false);
       form.reset();
     } catch (error) {
