@@ -1,3 +1,5 @@
+import { Navbar } from "../_components/navbar";
+
 export default function Subscription() {
-  return <div>Subscription</div>;
+  return <Navbar />;
 }
