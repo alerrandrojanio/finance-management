@@ -8,6 +8,7 @@ import { MONTH_OPTIONS, TimeType, YEAR_OPTIONS } from "../_contants/time";
 interface HomeProps {
   searchParams: {
     month?: string;
+    year?: string;
   };
 }
 
@@ -31,7 +32,7 @@ export default async function Home({
           </div>
         </div>
 
-        <SummaryCards month={month} year={year} />
+        {await SummaryCards({ month, year })}
       </div>
     </>
   );
